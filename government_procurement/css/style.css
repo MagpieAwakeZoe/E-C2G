@@ -1,0 +1,395 @@
+body {
+	font-family: Cambria, Arial;
+	background: rgba(240,240,240,1);
+	padding: 0;
+	margin: 0;
+}
+a{
+text-decoration: none;
+}
+.tabs {
+		width: 100%;
+		max-width: 1000px;
+		margin: 50px auto;
+		transform: scale(1.5,1.5);
+	}
+input {
+			opacity: 0;
+		}
+label {
+			cursor: pointer;
+			background: -webkit-linear-gradient(#666, #555);
+			color: #eee;
+			border-radius: 5px 5px 0 0;
+			padding: 1.5% 3%;
+			float: left;
+			margin-right: 2px;
+			font: italic 1em cambria;
+		}
+label:hover {
+				background: -webkit-linear-gradient(#777, #666);
+			}
+input:checked + label {
+				background: #fff;
+				color: #333;
+			}
+.tabs input:nth-of-type(1):checked ~ .panels .panel:first-child,
+.tabs input:nth-of-type(2):checked ~ .panels .panel:nth-child(2),
+.tabs input:nth-of-type(3):checked ~ .panels .panel:nth-child(3),
+.tabs input:nth-of-type(4):checked ~ .panels .panel:last-child {
+			opacity: 1;
+			-webkit-transition: .3s;
+		}
+.panels {
+			float: left;
+			clear: both;
+			position: relative;
+			width: 74%;
+			background: #fff;
+			border-radius: 0 10px 10px 10px;
+			min-height: 315px;
+		}
+.panel {
+				width: 100%;
+				opacity: 0;
+				position: absolute;
+				background: #fff;
+				border-radius: 0 10px 10px 10px;
+				padding: 4%;
+				box-sizing: border-box;
+			}
+.panel h2 {
+					margin: 0;
+					font-family: Arial;
+				}
+
+/*标题*/
+.title{
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0,84,150,1);
+	margin-top: -3px;
+	box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+}
+/*标题的分块*/
+.block{
+	width: 240px;
+	height: 100%;
+	background-color: rgba(0,84,150,1);
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+	margin-left: 20px;
+}
+.block:hover{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+/*采购系统交易系统*/
+.block0{
+	width: 220px;
+	height: 39px;
+	background-color: aqua;
+	position: absolute;
+	top: 111px;
+	left: 1192px;
+    border-radius:8px;
+	cursor: pointer;
+}
+.block0:hover{
+	color: white;
+	background-color: orange;
+}
+
+/*存放内容的容器*/
+.container2{
+	width: 80%;
+	height: 700px;
+	/*background-color: green;*/
+	margin: auto;
+	margin-top: 40px;
+}
+
+/*消息栏*/
+.message{
+	width: 100%;
+	height: 50px;
+	/*background-color: orange;*/
+	box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+	font-size: 18px;
+	color:rgba(2,57,111,1);
+	background-color: white;
+}
+/*内容区块1*/
+.content1{
+	width: 100%;
+	height: 300px;
+	/*background-color: orange;*/
+	margin-top: 20px;
+	box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+	background-color: white;
+}
+/*展示消息*/
+.showMessage{
+	width: 50%;
+	height: 290px;
+	/*background-color: red;*/
+	position: absolute;
+	margin: -280px 0 0 400px;
+	color:rgba(2,57,111,1);
+}
+
+/*消息下面的内容*/
+.pieces{
+	width: 80%;
+	height: 190px;
+	/*background-color: orange;*/
+	margin: auto;
+	font-size: 18px;
+	margin-top: 50px;
+}
+/*内容区块2*/
+.content2{
+	width: 100%;
+	height: 650px;
+	/*background-color: orange;*/
+	margin-top: 20px;
+	box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+	background-color:rgba(240,240,240,1);
+}
+/*分隔板的内容*/
+li{
+	font-size: 12px;
+}
+.partition{
+	width: 60%;
+	height: 220px;
+	background-color:rgba(240,240,240,1);
+	margin-top: 20px;
+	display: inline-block;
+	box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+}
+.partition2{
+	width: 35%;
+	height: 220px;
+	background-color:rgba(240,240,240,1);
+	margin-top: 20px;
+	position: relative;
+	left: 30px;
+	display: inline-block;
+	box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+}
+.inBox{
+	width: 90%;
+	height: 80%;
+	background-color: white;
+	margin: 5%;
+	border-radius: 8px;
+	box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+}
+.inBox2{
+	width: 80%;
+	height: 80%;
+	background-color:white;
+	margin: 10%;
+	border-radius: 8px;
+	box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+}
+/*字体*/
+.font{
+	position: absolute;
+	font-size: 10px;
+	margin-left: 20px;
+	color:rgba(2,57,111,1);
+}
+.font2{
+	position: absolute;
+	font-size: 10px;
+	margin-left: 20px;
+	margin-top: 50px;
+	color:rgba(2,57,111,1);
+}
+.font3{
+	position: absolute;
+	font-size: 10px;
+	margin-left: 20px;
+	margin-top: 90px;
+	color:rgba(2,57,111,1);
+}
+.font4{
+	position: absolute;
+	font-size: 10px;
+	margin-left: 20px;
+	margin-top: 130px;
+	color:rgba(2,57,111,1);
+}
+.date{
+	position: absolute;
+	font-size: 10px;
+	margin-left: 20px;
+	margin-top: 30px;
+	color:rgba(2,57,111,1);
+}
+.date2{
+	position: absolute;
+	font-size: 10px;
+	margin-left: 20px;
+	margin-top: 70px;
+	color:rgba(2,57,111,1);
+}
+.date3{
+	position: absolute;
+	font-size: 10px;
+	margin-left: 20px;
+	margin-top: 110px;
+	color:rgba(2,57,111,1);
+}
+.date4{
+	position: absolute;
+	font-size: 10px;
+	margin-left: 20px;
+	margin-top: 150px;
+	color:rgba(2,57,111,1);
+}
+/*各个省*/
+.d1{
+     width: 15%;
+     height: 39px;
+     background-color: orange;
+     display: inline-block;
+    margin-left: 7px;
+    margin-top: 3px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+}
+.d2{
+    width: 15%;
+    height: 39px;
+    background-color: orange;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 3px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+}
+.d3{
+    width: 15%;
+    height: 39px;
+    background-color: orange;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 3px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+}
+.d4{
+    width: 15%;
+    height: 39px;
+    background-color: orange;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 3px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+}
+.d5{
+    width: 15%;
+    height: 39px;
+    background-color: orange;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 3px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+}
+.d6{
+    width: 15%;
+    height: 39px;
+    background-color: orange;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 3px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px gray;
+    cursor: pointer;
+}
+.dd1{
+    margin: 10px 0 0 34px;
+	font-family: cursive;
+}
+
+/*法律*/
+.lowsContent{
+    width: 300px;
+    height: 236px;
+    /*background-color: red;*/
+    position: absolute;
+    left: 427px;
+    margin-top: -239px;
+}
+.instruction{
+    width: 80%;
+    height: 200px;
+    /*background-color: blue;*/
+    margin: auto;
+    font-size: 3px;
+    overflow: scroll;
+}
+
+/*采购服务*/
+.service{
+	width: 700px;
+	height: 250px;
+	background-color: rgba(240,240,240,1);
+	margin-left: -8px;
+	margin-top: 10px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 12px gray;
+}
+
+.div{
+	width: 300px;
+	height: 120px;
+	/*background-color: green;*/
+	position: absolute;
+}
+.div1{
+	margin-top: 20px;
+	margin-left: 40px;
+	/*background-color: orange;*/
+}
+.div2{
+	margin-top: 20px;
+	margin-left: 360px;
+	/*background-color: blue;*/
+
+}
+.div3{
+	margin-left: 40px;
+	margin-top: 120px;
+	/*background-color: white;*/
+}
+.div4{
+	margin-left: 360px;
+	margin-top: 120px;
+	/*background-color: pink;*/
+}
+.ser{
+	padding-left: 10px;
+	font-size: 12px;
+	/*list-style-type: none;*/
+}
